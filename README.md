@@ -10,11 +10,11 @@ catkin build -DFORCE_DYNAMIC_BUILD=YES -DUSE_LP=False
 
 To run the planner:
 
-First, make sure roscore is running somewhere).
+First, make sure roscore is running somewhere.
 Then, in a shell run
 
 ```
-translate.py <domain.pddl> <problem.pddl>  #This is not included here
+~/fd/src/translate/translate.py <domain.pddl> <problem.pddl> --keep-unreachable-facts --keep-unimportant-variables #This is not included here
 rosrun fd_ros downward --search "astar(lmcut())" < output.sas   
 ```
 
