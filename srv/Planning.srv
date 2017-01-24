@@ -1,0 +1,5 @@
+Fact[] init_state_facts
+---
+bool unsolvable
+bool solved
+string[] plan
